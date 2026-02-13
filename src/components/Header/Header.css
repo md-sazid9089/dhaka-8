@@ -1,0 +1,57 @@
+.header {
+  text-align: center;
+  padding: 30px 0 10px;
+}
+
+.badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--gold), #f59e0b);
+  color: #1a1a1a;
+  padding: 6px 24px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(251, 191, 36, 0);
+  }
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  background: linear-gradient(
+    to right,
+    var(--mirza-color),
+    #fff,
+    var(--patowary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+
+.header .constituency {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+  font-weight: 400;
+}
+
+.header .bengali {
+  font-family: "Noto Sans Bengali", sans-serif;
+  font-size: 1rem;
+  color: var(--gold);
+  margin-top: 2px;
+}

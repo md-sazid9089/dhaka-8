@@ -1,0 +1,103 @@
+.booth-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 16px;
+  transition: all 0.3s ease;
+}
+
+.booth-card:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.booth-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.booth-name {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.booth-status {
+  font-size: 0.65rem;
+  padding: 3px 10px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.booth-status.counted {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+}
+
+.booth-status.pending {
+  background: rgba(251, 191, 36, 0.15);
+  color: #fbbf24;
+}
+
+.booth-votes {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.booth-vote {
+  flex: 1;
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.booth-vote.mirza-side {
+  background: rgba(26, 115, 232, 0.1);
+}
+
+.booth-vote.patowary-side {
+  background: rgba(232, 55, 26, 0.1);
+}
+
+.booth-vote .bv-name {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+.booth-vote .bv-count {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.booth-vote .bv-count.mirza-text {
+  color: var(--mirza-color);
+}
+.booth-vote .bv-count.patowary-text {
+  color: var(--patowary-color);
+}
+
+.booth-mini-bar {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  margin-top: 10px;
+}
+
+.booth-mini-mirza {
+  height: 100%;
+  background: var(--mirza-color);
+  transition: width 1s ease;
+}
+
+.booth-mini-patowary {
+  height: 100%;
+  background: var(--patowary-color);
+  transition: width 1s ease;
+}
