@@ -1,5 +1,6 @@
 import { formatNumber } from "../../utils/helpers";
 import RECOUNT_DATA from "../../data/recountData";
+import { FiTrendingUp } from "react-icons/fi";
 import mirzaImg from "../../assets/miraza.jpeg";
 import patowaryImg from "../../assets/patoyari.jpeg";
 import "./CandidateCards.css";
@@ -13,7 +14,7 @@ export default function CandidateCards({ totalMirza, totalPatowary }) {
     <div className="candidates">
       {/* Mirza Abbas */}
       <div className={`candidate-card mirza ${mirzaLeading ? "leading" : ""}`}>
-        <div className="leading-badge">✦ LEADING</div>
+        <div className="leading-badge"><FiTrendingUp style={{ verticalAlign: 'middle', marginRight: 4 }} />LEADING</div>
         <img src={mirzaImg} alt={candidate1.name} className="avatar" />
         <div className="candidate-name">{candidate1.name}</div>
         <div className="candidate-party">{candidate1.party}</div>
@@ -28,7 +29,7 @@ export default function CandidateCards({ totalMirza, totalPatowary }) {
 
       {/* Patowary */}
       <div className={`candidate-card patowary ${patowaryLeading ? "leading" : ""}`}>
-        <div className="leading-badge">✦ LEADING</div>
+        <div className="leading-badge"><FiTrendingUp style={{ verticalAlign: 'middle', marginRight: 4 }} />LEADING</div>
         <img src={patowaryImg} alt={candidate2.name} className="avatar" />
         <div className="candidate-name">{candidate2.name}</div>
         <div className="candidate-party">{candidate2.party}</div>

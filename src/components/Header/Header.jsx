@@ -1,4 +1,5 @@
 import headerBg from "../../assets/header.jpeg";
+import { FaCircle } from "react-icons/fa";
 import "./Header.css";
 
 export default function Header() {
@@ -7,7 +8,7 @@ export default function Header() {
       className="header"
       style={{ backgroundImage: `url(${headerBg})` }}
     >
-      <div className="badge">🔴 Live Recount</div>
+      <div className="badge"><FaCircle className="live-dot" /> Live Recount</div>
       <h1>DHAKA-8</h1>
       <div className="constituency">
         Parliamentary Constituency — Vote Recount 2026

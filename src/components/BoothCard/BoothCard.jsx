@@ -1,4 +1,5 @@
 import { memo } from "react";
+import { FiCheckCircle, FiClock } from "react-icons/fi";
 import { formatNumber, getPercentage } from "../../utils/helpers";
 import "./BoothCard.css";
 
@@ -12,7 +13,9 @@ const BoothCard = memo(function BoothCard({ booth }) {
       <div className="booth-header">
         <div className="booth-name">{booth.name}</div>
         <div className={`booth-status ${booth.status}`}>
-          {booth.status === "counted" ? "✓ Counted" : "⏳ Pending"}
+          {booth.status === "counted"
+            ? <><FiCheckCircle style={{ verticalAlign: 'middle', marginRight: 4 }} />Counted</>
+            : <><FiClock style={{ verticalAlign: 'middle', marginRight: 4 }} />Pending</>}
         </div>
       </div>
 
