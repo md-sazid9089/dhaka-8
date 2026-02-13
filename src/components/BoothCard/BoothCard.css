@@ -101,3 +101,36 @@
   background: var(--patowary-color);
   transition: width 1s ease;
 }
+
+@media (max-width: 480px) {
+  .booth-card {
+    padding: 12px;
+  }
+  .booth-name {
+    font-size: 0.75rem;
+  }
+  .booth-status {
+    font-size: 0.6rem;
+    padding: 2px 8px;
+  }
+  .booth-vote {
+    padding: 6px;
+  }
+  .booth-vote .bv-count {
+    font-size: 0.95rem;
+  }
+  .booth-vote .bv-name {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .booth-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}/* end responsive */
+  background: var(--patowary-color);
+  transition: width 1s ease;
+}

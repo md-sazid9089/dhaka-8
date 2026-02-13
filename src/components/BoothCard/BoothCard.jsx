@@ -1,7 +1,8 @@
+import { memo } from "react";
 import { formatNumber, getPercentage } from "../../utils/helpers";
 import "./BoothCard.css";
 
-export default function BoothCard({ booth }) {
+const BoothCard = memo(function BoothCard({ booth }) {
   const boothTotal = booth.mirza + booth.patowary;
   const mirzaW = getPercentage(booth.mirza, boothTotal);
   const patowaryW = getPercentage(booth.patowary, boothTotal);
@@ -34,4 +35,6 @@ export default function BoothCard({ booth }) {
       </div>
     </div>
   );
-}
+});
+
+export default BoothCard;

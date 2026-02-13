@@ -1,5 +1,7 @@
 import { formatNumber } from "../../utils/helpers";
 import RECOUNT_DATA from "../../data/recountData";
+import mirzaImg from "../../assets/miraza.jpeg";
+import patowaryImg from "../../assets/patoyari.jpeg";
 import "./CandidateCards.css";
 
 export default function CandidateCards({ totalMirza, totalPatowary }) {
@@ -12,7 +14,7 @@ export default function CandidateCards({ totalMirza, totalPatowary }) {
       {/* Mirza Abbas */}
       <div className={`candidate-card mirza ${mirzaLeading ? "leading" : ""}`}>
         <div className="leading-badge">✦ LEADING</div>
-        <div className="avatar mirza-bg">{candidate1.shortName}</div>
+        <img src={mirzaImg} alt={candidate1.name} className="avatar" />
         <div className="candidate-name">{candidate1.name}</div>
         <div className="candidate-party">{candidate1.party}</div>
         <div className="vote-count mirza-text">{formatNumber(totalMirza)}</div>
@@ -27,7 +29,7 @@ export default function CandidateCards({ totalMirza, totalPatowary }) {
       {/* Patowary */}
       <div className={`candidate-card patowary ${patowaryLeading ? "leading" : ""}`}>
         <div className="leading-badge">✦ LEADING</div>
-        <div className="avatar patowary-bg">{candidate2.shortName}</div>
+        <img src={patowaryImg} alt={candidate2.name} className="avatar" />
         <div className="candidate-name">{candidate2.name}</div>
         <div className="candidate-party">{candidate2.party}</div>
         <div className="vote-count patowary-text">{formatNumber(totalPatowary)}</div>

@@ -17,3 +17,13 @@
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 12px;
 }
+
+@media (max-width: 480px) {
+  .booth-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .booth-section h2 {
+    font-size: 1rem;
+  }
+}

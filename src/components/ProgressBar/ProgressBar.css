@@ -60,3 +60,31 @@
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   min-width: 60px;
 }
+
+@media (max-width: 768px) {
+  .progress-bar-container {
+    padding: 14px 16px;
+  }
+  .progress-track {
+    height: 36px;
+  }
+  .progress-fill-mirza,
+  .progress-fill-patowary {
+    font-size: 0.8rem;
+    min-width: 45px;
+  }
+  .progress-labels {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .progress-track {
+    height: 28px;
+  }
+  .progress-fill-mirza,
+  .progress-fill-patowary {
+    font-size: 0.7rem;
+    min-width: 38px;
+  }
+}
